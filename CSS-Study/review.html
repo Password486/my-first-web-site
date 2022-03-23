@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>반가워요</title>
+    <style>
+      a{
+        color: black;
+        text-decoration: none;
+      }
+      h1{
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin: 0;
+        padding: 24px;
+      }
+      ol{
+        border-right: 1px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 24px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #grid ol{
+        padding-left: 32px;
+      }
+      #grid #article{
+        padding-left: 24px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+        ol{
+          border-right: none;
+        }
+        h1{
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="review.html">자동차</a></h1>
+    <div id="grid">
+      <ol>
+        <li><a href="1.html">엔진</a></li>
+        <li><a href="2.html">조향장치</a></li>
+        <li><a href="3.html">새시</a></li>
+      </ol>
+      <div id="article">
+        <h2>자동차란 무엇인가?</h2>
+        <p>
+          <strong>자동차(영어: Car, 自動車)는 엔진 에서 만든 동력을 바퀴에 전달하여 지상에서 승객이나 화물을 운반하는 교통 수단이다.</strong> 자동차를 뜻하는 영어 단어인 'Car'는 라틴어 'Carrus' 혹은 'Carrum'에서 왔고, 미국 영어 단어인 'Automobile'은 그리스어 'Autos'와 라틴어 'Movere'에서 왔다. 즉, '스스로 움직인다'는 뜻을 가지고 있다. 대한민국에는 1911년 대한제국의 황제 순종의 전용차와 조선총독부의 관용으로 처음 들어왔다.
+        </p>
+        <p>
+          <img src="car.jpg" width="100%">
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
