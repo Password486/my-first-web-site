@@ -5,25 +5,36 @@
     <title></title>
     <style>
       .container{
-        background-color: powderblue;
-        height: 200px;
+        background-color: beige;
+        height: 100vh;
         display: flex;
-        flex-direction: column;
       }
-      .item{
-        background-color: tomato;
-        color:white;
-        border: 1px solid white;
+      .item {
+        width: 40px;
+        height: 40px;
+        border: 1px solid black;
+      }
+      .item1 {
+        background-color: #ef9a9a;
+        flex: 2 2 auto; /*grow, shrink, basis*/
+        align-self: center;
+      }
+      .item2 {
+        background-color: #f48fb1;
+        a
+      }
+      .item3 {
+        background-color: #ce93d8;
+        flex-grow: 1;
+        flex-shrink: 2;
       }
     </style>
   </head>
   <body>
   <div class="container">
-    <div class="item">1</div>
-    <div class="item">2</div>
-    <div class="item">3</div>
-    <div class="item">4</div>
-    <div class="item">5</div>
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
   </div>
   </body>
 </html>

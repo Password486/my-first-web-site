@@ -1,0 +1,73 @@
+<!DOCTYPE html5>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 800px;
+      border: 1px solid gray;
+    }
+    header{
+      border-bottom: 1px solid gray;
+      padding-left: 20px;
+    }
+    footer{
+      border-top: 1px solid gray;
+      padding: 20px;
+      text-align: center;
+    }
+    .content{
+      display: flex;
+    }
+    .content nav{
+      border-right: 1px solid gray;
+    }
+    .content aside{
+      border-left: 1px solid gray;
+    }
+    nav, aside{
+      flex-basis: 150px;
+      flex-shrink: 0;
+    }
+    main{
+      padding: 10px;
+    }
+    nav{
+      order:-1;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>생활코딩</h1>
+        </header>
+      <section class="content">
+        <main>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos ipsam aliquid consequatur, dolores illum minima, id in fuga. Voluptate quaerat, assumenda nisi, fugit suscipit voluptates eos architecto. Odio sit fuga dignissimos aspernatur, amet repellat itaque necessitatibus. Laborum sint totam, dolorum vitae fuga ipsa quisquam atque recusandae, provident blanditiis quis cumque obcaecati esse maiores dignissimos accusantium facere sapiente veniam aspernatur excepturi voluptatibus! Architecto blanditiis eum alias, delectus non tempore facere dignissimos quibusdam pariatur libero sit asperiores. Necessitatibus perferendis aut tempore a accusamus vero quae facilis adipisci neque mollitia, ab doloribus nesciunt asperiores autem aliquid, eligendi accusantium cumque dignissimos odit assumenda deleniti nostrum molestiae. Ipsum, harum. Quas vero, numquam omnis mollitia quia accusantium nihil odit. Maiores architecto placeat necessitatibus excepturi alias magnam a similique exercitationem sequi odio, sunt voluptatibus quia ducimus corrupti asperiores adipisci deserunt praesentium esse officia quibusdam, unde harum animi? Ea fugit hic id, facere eveniet, autem nisi deleniti mollitia neque dicta accusantium voluptatem consequuntur eos perferendis dolores unde consequatur similique dolorem ab architecto, vitae nobis perspiciatis. Ab accusamus vero ullam corrupti cumque dicta officiis, unde, corporis itaque. Voluptatibus consequuntur sunt numquam iciis, aperiam adipisci tempora! Excepturi provident omnis veritatis error at sint, ab optio, fuga incidunt minus alias hic inventore iusto. Incidunt recusandae, cupiditate explicabo obcaecati itaque animi laborum, sapiente odio, minus totam sunt quibusdam molestias dolorum eaque? Veritatis corrupti corporis inventore quibusdam placeat iure!
+        </main>
+        <nav>
+          <ul>
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+        </nav>
+        <aside>
+          AD
+        </aside>
+      </section>
+      <footer>
+        <a href="http://opentutorials.org/course/1">홈페이지</a>
+      </footer>
+    </div>
+  </body>
+</html>
