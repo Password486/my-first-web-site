@@ -7,6 +7,7 @@
     코드가 더 필요한 것이다. 이것을 선택자라고 한다. 그리고 선택자에게 지정될
     효과를 선언이라고 한다.-->
     <link rel="stylesheet" href="style.css">
+    <script src="color.js"></script>
   </head>
   <body>
     <h1><a href="index.html">자동차</a></h1>
@@ -30,32 +31,7 @@
       }
     "> -->
     <input id="night_day" type="button" value="night" onclick="
-      var target = document.querySelector('body');
-      if(this.value ==='night') {
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day'
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-          console.log(alist[i]);
-          alist[i].style.color = 'powderblue';
-          i = i + 1;
-        }
-      } else {
-      target.style.backgroundColor = 'white';
-      target.style.color = 'black';
-      this.value = 'night'
-
-      var alist = document.querySelectorAll('a');
-      var i = 0;
-      while(i < alist.length){
-          console.log(alist[i]);
-          alist[i].style.color = 'blue';
-          i = i + 1;
-        }
-      }
+      nightDayHandler(this);
     ">
     <div id="grid">
       <ol>
